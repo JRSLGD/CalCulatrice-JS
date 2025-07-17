@@ -28,3 +28,10 @@ body{
     padding: 5px;
     font-size: 25px;
 }
+
+.touches {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 5px;
+}
