@@ -8,27 +8,33 @@
 </head>
 <body>
     <div class="calculatrice">
-        <div class="ecran"></div>
+        <div class="ecran">
+            <input type="text" id="ecran" readonly>
+        </div>
         <div class="touches">
-            <button data-key="8" class="boutton">(</button>
-            <button data-key="53" class="boutton">)</button>
-            <button data-key="219" class="boutton">/</button>
-            <button data-key="111" class="boutton">C</button>
-            <button data-key="103" class="boutton">7</button>
-            <button data-key="104" class="boutton">8</button>
-            <button data-key="105" class="boutton">9</button>
-            <button data-key="106" class="boutton">*</button>
-            <button data-key="100" class="boutton">4</button>
-            <button data-key="101" class="boutton">5</button>
-            <button data-key="102" class="boutton">6</button>
-            <button data-key="109" class="boutton">-</button>
-            <button data-key="97" class="boutton">1</button>
-            <button data-key="98" class="boutton">2</button>
-            <button data-key="99" class="boutton">3</button>
-            <button data-key="107" class="boutton">+</button>
-            <button data-key="96" class="boutton">0</button>
-            <button data-key="110" class="boutton">.</button>
-            <button data-key="13" class="boutton">=</button>
+            <button onclick="effacer()">C</button>
+            <button onclick="ajouterNombre('(')">(</button>
+            <button onclick="ajouterNombre(')')">)</button>
+            <button onclick="ajouterOperation('/')">/</button>
+
+            <button onclick="ajouterNombre('7')">7</button>
+            <button onclick="ajouterNombre('8')">8</button>
+            <button onclick="ajouterNombre('9')">9</button>
+            <button onclick="ajouterOperation('*')">*</button>
+
+            <button onclick="ajouterNombre('4')">4</button>
+            <button onclick="ajouterNombre('5')">5</button>
+            <button onclick="ajouterNombre('6')">6</button>
+            <button onclick="ajouterOperation('-')">-</button>
+
+            <button onclick="ajouterNombre('1')">1</button>
+            <button onclick="ajouterNombre('2')">2</button>
+            <button onclick="ajouterNombre('3')">3</button>
+            <button onclick="ajouterOperation('+')">+</button>
+
+            <button onclick="ajouterNombre('0')">0</button>
+            <button onclick="ajouterNombre('.')">.</button>
+            <button onclick="calculer()">=</button>
         </div>
     </div>
     <script src="App.js"></script>
