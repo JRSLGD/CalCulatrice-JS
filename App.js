@@ -1,8 +1,13 @@
 //DOM
 
 const allbtns = [...document.querySelectorAll('.boutton')];
-const listKeycode = touches.map(touche => touche.dataset.key);
+const listeKeycode = touches.map(touche => touche.dataset.key);
 
 document.addEventListener('keydown', (e) => {
-    const valeur = e.keyCode.toString();
+    const valeur = e.key.toString();
+
+})
+
+document.addEventListener('click',(e) => {
+    const valeur = e.target.dataset.key;
 })
