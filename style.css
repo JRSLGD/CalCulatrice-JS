@@ -10,10 +10,10 @@
 
     /* Boutons opérations (+, -, *, /) */
     --couleur-bouton-operation: #f1f1f1;   /* Fond */
-    --couleur-bouton-operation-hover: #12153d; /* Au survol */
+    --couleur-bouton-operation-hover: #adadad; /* Au survol */
 
     --couleur-bouton-special: #e08900;
-    --couleur-bouton-special-hover: #c47901;
+    --couleur-bouton-special-hover: #855201;
 
     /* Taille des éléments */
     --taille-bouton: 60px;                /* Largeur/hauteur des boutons */
@@ -88,7 +88,6 @@ button:nth-child(4n) {
 }
 button:nth-child(4n):hover {
     background-color: var(--couleur-bouton-operation-hover);
-    color: #f1f1f1;
 }
 .touches button.special{
     background-color: var(--couleur-bouton-special);
