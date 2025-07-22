@@ -32,3 +32,9 @@ function calculer(){
         calculEnCours = '';
     }
 }
+function supprCaractere(){
+    if(calculEnCours.length > 0 ){
+        calculEnCours = calculEnCours.slice( 0, -1);
+        ecran.value = calculEnCours || '0';
+    }
+}
