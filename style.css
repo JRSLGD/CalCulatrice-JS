@@ -95,8 +95,3 @@ button:nth-child(4n):hover {
 .touches button.special:hover {
     background-color: var(--couleur-bouton-special-hover);
 }
-button:last-child {
-    grid-column: span 2;
-    width: auto;
-    border-radius: 15px;
-}
