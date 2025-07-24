@@ -91,7 +91,11 @@ button:nth-child(4n):hover {
 }
 .touches button.special{
     background-color: var(--couleur-bouton-special);
+    color: white;
 }
 .touches button.special:hover {
     background-color: var(--couleur-bouton-special-hover);
+}
+.btnMem{
+    font-size: 1em;
 }
