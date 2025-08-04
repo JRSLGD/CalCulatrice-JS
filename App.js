@@ -38,3 +38,19 @@ function supprCaractere(){
         ecran.value = calculEnCours || '0';
     }   
 }
+function memoriser(action){
+    const ecranMemoriser = parseFloat(ecran.value);
+
+    switch(action){
+        case 'add':
+            memoire += ecranMemoriser;
+            break;
+        case 'substract':
+            memoire -= ecranMemoriser;
+            break;
+        case 'recall':
+            ecran.value = memoire;
+            calculEnCours = string(memoire);
+            break
+    }
+}
