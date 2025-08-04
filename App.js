@@ -42,6 +42,7 @@ function memoriser(action){
     const ecranMemoriser = parseFloat(ecran.value);
 
     switch(action){
+        
         case 'add':
             memoire += ecranMemoriser;
             break;
