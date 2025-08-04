@@ -50,7 +50,10 @@ function memoriser(action){
             break;
         case 'recall':
             ecran.value = memoire;
-            calculEnCours = string(memoire);
+            calculEnCours = String(memoire);
+            break;
+        case 'clear':
+            memoire = 0;
             break;
     }
 }
