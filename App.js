@@ -1,6 +1,6 @@
 let ecran = document.getElementById('ecran');
 let calculEnCours = '';
-
+let memoire = 0;
 
 function ajouterNombre(value){
     calculEnCours += value;
@@ -39,15 +39,15 @@ function supprCaractere(){
     }   
 }
 function memoriser(action){
-    const ecranMemoriser = parseFloat(ecran.value);
+    const valeurEcran = parseFloat(ecran.value);
 
     switch(action){
         
         case 'add':
-            memoire += ecranMemoriser;
+            memoire += valeurEcran;
             break;
         case 'substract':
-            memoire -= ecranMemoriser;
+            memoire -= valeurEcran;
             break;
         case 'recall':
             ecran.value = memoire;
@@ -57,4 +57,11 @@ function memoriser(action){
             memoire = 0;
             break;
     }
+    updateMemoryDisplay();
+}
+function updateMemoryDisplay(){
+    const memoireActive = memoire !== 0 ;
+    document.querySelectorAll ('[onclick ^="memoriser"]').forEach(btn=>{
+        btn.style.border = memoireActive ? '2px solid gold' : 'none';
+    });
 }
